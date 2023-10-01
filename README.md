@@ -11,6 +11,9 @@
       url = "https://github.com/davidnuon/nix2slides/archive/refs/heads/main.tar.gz";
     }) {},
 }:
+
+# This derivaiton makes a slides.tar.gz which contains an `index.html`
+# and all the relevant styles and JavaScript
 nix2slides.mkDerivation {
   name = "My derivation name";
 
