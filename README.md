@@ -12,9 +12,15 @@
     }) {},
 }:
 nix2slides.mkDerivation {;
-  title = "My Slide Deck";
   name = "My derivation name";
+
+  # Title of the HTML page for the slide deck
+  title = "My Slide Deck";
+
+  # See https://revealjs.com/themes/ for valid themes
   theme = "sky";
+
+  # A list of multi-line markdown strings that represent your slides 
   content = [
     ''
       # Hello
