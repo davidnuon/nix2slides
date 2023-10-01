@@ -36,6 +36,8 @@ in rec {
         cp $revealJS/dist/reveal.js $out
         cp -R $revealJS/dist/theme $out/theme
         cp $outputFile $out/index.html
+        cd $out
+        tar -cvf slides.tar.gz plugin reveal.css reveal.js theme index.html
       '';
     };
 }
