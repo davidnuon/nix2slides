@@ -11,7 +11,7 @@
       url = "https://github.com/davidnuon/nix2slides/archive/refs/heads/main.tar.gz";
     }) {},
 }:
-nix2slides.mkDerivation {;
+nix2slides.mkDerivation {
   name = "My derivation name";
 
   # Title of the HTML page for the slide deck
@@ -20,7 +20,7 @@ nix2slides.mkDerivation {;
   # See https://revealjs.com/themes/ for valid themes
   theme = "sky";
 
-  # A list of multi-line markdown strings that represent your slides 
+  # A list of multi-line markdown strings that represent your slides
   content = [
     ''
       # Hello
